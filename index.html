@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Cabeçalho, meta tags, fontes, estilo e script-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dosis:wght@200..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b3fcc7f73c.js" crossorigin="anonymous"></script>
+    <title>Felix Nogueira | Portfólio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="titulo_pagina">
+                <h1>Felix Nogueira | Portfólio</h1>
+            </div>
+            <!--Links de navegação do site-->
+            <ul class="links_navi">
+                <li><a id="linkSobre" href="#">SOBRE</a></li>
+                <li><a id="linkFormacao" href="#">FORMAÇÃO</a></li>
+                <li><a id="linkPortfolio" href="#">PORTFÓLIO</a></li>
+                <li><a id="linkContato" href="#">CONTATO</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Páginas separadas em seções-->
+    <main>
+        <!--Seção sobre-->
+        <section id="sobre" class="secao_sobre secoes">
+            <h1 class="titulo_secao">Sobre Mim</h1>
+            <div class="container">
+                <h3 id="apresentacao">Olá, meu nome é Felix Nogueira,</h3>
+                <div class="card_content card_imagem">
+                    <div class="container_imagem">
+                        <img src="./images/FOTO_PERFIL.jpeg" alt="Foto de perfil" class="foto_perfil">
+                    </div>
+                    <div>
+                        <p>Sou estudante de Análise e Desenvolvimento de Sistemas com experiência em programação com Arduino e software Desktop com .NET.</p><br>
+                        <p>Tenho interesse também em desenvolvimento multiplataforma.
+                        </p><br>
+                        <p>Amo aprender, então tenho uma coleção de hobbies, como:</p><br>
+                        <ul>
+                            <li>escrita criativa</li>
+                            <li>aprendizagem de diferentes idiomas</li>
+                            <li>instrumentos de corda</li>
+                            <li>pintura digital</li>
+                            <li>tatuagem</li>
+                        </ul><br>
+                        <p>Atualmente trabalho com Suporte de T.I. porém tenho experiência com modelagem 3D e como projetista de móveis para corte.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seção formação-->
+        <section id="formacao" class="secao_formacao secoes">
+            <h1 class="titulo_secao">Formação Acadêmica</h1>
+            <!--Seção Ensino Superior-->
+            <div class="container certs_container">
+                <h3>Análise e Desenvolvimento de Sistemas - UNINTER</h3>
+                <h5>2024-2027</h5>
+                <div class="card_content">
+                    <p>Atualmente matriculado no curso de Análise e Desenvolvimento de Sistemas pelo Centro Universiário Internacional (UNINTER).</p><br>
+                    <p>Assuntos estudados até o momento incluem:</p>
+                    <ul>
+                        <li>Fundamentos de Design de Sistemas</li>
+                        <li>Desenvolvimento Web</li>
+                        <li>Banco de Dados</li>
+                        <li>Sistemas de Informação</li>
+                        <li>Ética e Sustentabilidade</li>
+                        <li>Entre outros...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container certs_container">
+                <!--Seção de cursos extracurriculares-->
+                <h3>Cursos</h3>
+                <div class="separador"></div>
+                <h4>Modelagem de Dados</h4>
+                <div class="card_content">
+                    <h5>2025</h5>
+                    <p>Alura</p>
+                    <button class="imgLink">
+                        <img src="./images/cert_modelagem.png" alt="Imagem do certificado do curso de Modelagem de Dados" class="img_cert">
+                    </button>
+                </div>
+                <div class="separador"></div>
+                <h4>PowerShell</h4>
+                <div class="card_content">
+                    <h5>2025</h5>
+                    <p>Alura</p>
+                    <button class="imgLink"> <img src="./images/cert_powershell.png" alt="Imagem do certificado do curso de PowerShell" class="img_cert">
+                    </button>
+                </div>
+                <div class="separador"></div>
+                <h4>Windows Prompt</h4>
+                <div class="card_content">
+                    <h5>2025</h5>
+                    <p>Alura</p>
+                    <button class="imgLink"><img src="./images/cert_winprompt.png" alt="Imagem do certificado do curso de Windows Prompt" class="img_cert"></button>
+                </div>
+            </div>
+        </section>
+        <!--Seção Portfólio-->
+        <section id="portfolio" class="secao_portfolio secoes">
+            <h1 class="titulo_secao">Portfólio</h1>
+            <!--Projetos trabalhados-->
+            <div class="container">
+                <h3>Projeto - Oráculo</h3>
+                <div class="card_content">
+                    <p>Um painel interativo desenvolvido para o Showroom Móvel da Mitsubishi Electric Brasil,<br>apresentando a história, os produtos e os serviços da empresa de forma inovadora. <br>Este software para desktop é integrado a botões físicos controlados por um Arduino, <br>permitindo que os visitantes interajam com o conteúdo de forma única e imersiva.
+                    </p>
+                    <br>
+                    <p>O painel está instalado em um caminhão que percorre o país, <br>juntamente com outras tecnologias da Mitsubishi Electric Brasil, <br>reforçando o compromisso da empresa com a inovação e experiências de qualidade.</p>
+                    <iframe class="video" src="https://www.youtube.com/embed/U0hJUbBpxGc?si=K23OR-Gi6BGGqGtl&amp;start=87" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="container_botoes">
+                        <div class="botao"><a href="https://github.com/felixnogueira/oraculo_panel">Github - Painel</a>
+                        </div>
+                        <div class="botao"><a href="https://github.com/felixnogueira/oraculo_arduino/">Github - Arduino</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Seção de contato com formulário-->
+        <section id="contato" class="secao_contato secoes">
+            <h1 class="titulo_secao">Contato</h1>
+            <div class="container">
+                <h3>Deixe uma mensagem:</h3>
+                <div class="card_content">
+                    <!--Formulário apenas com parte visual-->
+                    <!--setCustomValidity em cada um dos campos para alterar o idioma das mensagens de validação para português-->
+                    <form action="" method="" autocomplete="off">
+                        <div class="campo_form">
+                            <label class="separacao_nome" for="nome">Nome: </label>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" oninvalid="this.setCustomValidity('Por favor preencha seu nome')" class="campo_validade" required>
+                        </div>
+                        <div class="campo_form">
+                            <label for="email" class="separacao_email">Email: </label>
+                            <input type="email" name="email" id="email" class="campo_validade" placeholder="nome@email.com" oninvalid="this.setCustomValidity('Por favor insira um email válido')" required>
+                        </div>
+                        <div class="campo_form">
+                            <label for="mensagem" class="separacao_mensagem">Mensagem: </label>
+                            <textarea name="mensagem" class="campo_validade" id="mensagem" rows="3" cols="20" placeholder="Digite sua mensagem aqui..." required oninvalid="this.setCustomValidity('Por favor insira uma mensagem')"></textarea>
+                        </div>
+                        <div class="campo_form">
+                            <!--Botão submit chamando função formEnviado() para popup de aviso ao usuário após envio das informações-->
+                            <input type="submit" value="Enviar" class="botao" id="enviar_form" onclick="formEnviado()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <h3>Ou me encontre nas redes sociais:</h3>
+                <!--Pequena seção com links-->
+                <div class="card_content">
+                    <div class="icones">
+                        <a href="http://github.com/felixnogueira/"><i class="fa-brands fa-xl fa-github"></i></a>
+                        <a href="http://linkedin.com/in/felixnogueira"><i class="fa-brands fa-xl fa-linkedin-in"></i></a>
+                        <a href="mailto:felixnogueiradev@gmail.com"><i class="fa-solid fa-xl fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Script-->
+    <script src="script.js"></script>
+</body>
+
+</html>
