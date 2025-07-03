@@ -133,22 +133,24 @@
                 <div class="card_content">
                     <!--Formulário apenas com parte visual-->
                     <!--setCustomValidity em cada um dos campos para alterar o idioma das mensagens de validação para português-->
-                    <form action="" method="" autocomplete="off">
+                    <form id="contatoForm" novalidate>
                         <div class="campo_form">
                             <label class="separacao_nome" for="nome">Nome: </label>
-                            <input type="text" name="nome" id="nome" placeholder="Nome completo" oninvalid="this.setCustomValidity('Por favor preencha seu nome')" class="campo_validade" required>
+                            <input type="text" name="nome" id="nome" placeholder="Nome completo" oninvalid="this.setCustomValidity('Por favor preencha seu nome')" oninput="this.setCustomValidity('')" class="campo_validade" required>
                         </div>
                         <div class="campo_form">
                             <label for="email" class="separacao_email">Email: </label>
-                            <input type="email" name="email" id="email" class="campo_validade" placeholder="nome@email.com" oninvalid="this.setCustomValidity('Por favor insira um email válido')" required>
+                            <input type="email" name="email" id="email" class="campo_validade" placeholder="nome@email.com" oninvalid="this.setCustomValidity('Por favor insira um email válido')" oninput="this.setCustomValidity('')" required>
                         </div>
                         <div class="campo_form">
                             <label for="mensagem" class="separacao_mensagem">Mensagem: </label>
-                            <textarea name="mensagem" class="campo_validade" id="mensagem" rows="3" cols="20" placeholder="Digite sua mensagem aqui..." required oninvalid="this.setCustomValidity('Por favor insira uma mensagem')"></textarea>
+                            <textarea name="mensagem" class="campo_validade" id="mensagem" rows="3" cols="20" placeholder="Digite sua mensagem aqui..." required oninvalid="this.setCustomValidity('Por favor insira uma mensagem')" oninput="this.setCustomValidity('')"></textarea>
                         </div>
                         <div class="campo_form">
                             <!--Botão submit chamando função formEnviado() para popup de aviso ao usuário após envio das informações-->
-                            <input type="submit" value="Enviar" class="botao" id="enviar_form" onclick="formEnviado()">
+                            <button type="submit" class="botao" id="enviar_form" onclick="formEnviado(event)">
+                                <p>Enviar</p>
+                            </button>
                         </div>
                     </form>
                 </div>

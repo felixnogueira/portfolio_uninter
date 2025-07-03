@@ -30,12 +30,17 @@ Object.keys(sections).forEach(linkId => {
 });
 
 //função para abrir popup ao enviar o formulario de contato:
-function formEnviado() {
+function formEnviado(event) {
+    event.preventDefault();
     const campos = document.getElementsByClassName("campo_validade");
     const todosValidos = Array.from(campos).every(campo => campo.checkValidity());
+    const form = document.querySelector('form');
 
     if (todosValidos) {
         window.alert("Sua mensagem foi enviada. Obrigado!");
+        form.reset();
+    } else {
+        form.reportValidity();
     }
 }
 
@@ -44,8 +49,6 @@ function formEnviado() {
 //preenchido ele recarregue com os mesmos valores) e para forçar a 
 //pagina sobre a ser exibida no primeiro carregamento
 window.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form');
-    form.reset();
 
     const secaoInicial = document.getElementById('sobre');
     secaoInicial.style.display = 'block';
