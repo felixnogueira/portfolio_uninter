@@ -168,6 +168,10 @@ section.loaded {
     color: white;
 }
 
+.card_sobre p {
+    max-width: 600px;
+}
+
 .separador {
     height: 10px;
 }
