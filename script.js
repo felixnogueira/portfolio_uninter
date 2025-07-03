@@ -44,9 +44,7 @@ function formEnviado(event) {
     }
 }
 
-//event listener de carregamento da pagina para resetar o formulario 
-//(tentativa de impedir que ao recarregar a pagina com o formulario
-//preenchido ele recarregue com os mesmos valores) e para forçar a 
+//event listener de carregamento da pagina para forçar
 //pagina sobre a ser exibida no primeiro carregamento
 window.addEventListener('DOMContentLoaded', () => {
 
